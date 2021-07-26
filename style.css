@@ -28,7 +28,7 @@ header {
     display: flex;
     flex-direction: column;
     border: blueviolet 3px solid;
-    width: 50em;
+    width:60em;
 }
 
 
