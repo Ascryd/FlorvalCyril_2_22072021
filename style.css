@@ -189,3 +189,73 @@ input[type="search"]{
 .filtres {
     padding: 0em 1em 0em 0.5em
 }
+
+
+/* section */
+
+section {
+    margin-top: 2.5em;
+
+}
+
+    /* Hébergement */
+
+#hebergement {
+    background-color: rgb(207, 204, 204);
+    padding-left: 3em;
+    width: 60em;
+    height: auto;
+    border-radius: 1em;
+}
+
+#hebergement h1 {
+    padding: 2em 0em 1em 0em
+}
+
+#hebergement ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#hebergement img {
+    width: 18em;
+    height: 8em;
+    border-radius: 1em 1em 0em 0em;
+}
+
+#hebergement li {
+    border: white solid;
+    background-color: white;
+    height: 13.5em;
+    border-radius: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+
+    
+}
+
+#hebergement h2 {
+    font-size: 1.1em;
+    font-weight: 800;
+    padding: 0.5em 0em 0.4em 0.5em;
+}
+
+#hebergement p {
+    font-size: 0.95em;
+    padding: 0em 0em 0.4em 0.5em;
+}
+
+#star {
+    padding-left: 0.5em;
+}
+
+.bluestar {
+    font-size: 0.9em;
+    color: rgb(0, 119, 255);
+}
+
+.greystar {
+    font-size: 0.9em;
+    color: rgb(196, 196, 196);
+}
