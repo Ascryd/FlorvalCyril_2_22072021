@@ -195,6 +195,9 @@ input[type="search"]{
 
 section {
     margin-top: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -202,26 +205,26 @@ section {
 
 #hebergement {
     background-color: rgb(207, 204, 204);
-    padding-left: 3em;
+    padding: 0em 1.8em 0em 1.8em;
     width: 60em;
-    height: auto;
+    min-height: 42em;
     border-radius: 1em;
 }
 
 #hebergement h1 {
-    padding: 2em 0em 1em 0em
+    padding: 2em 0em 1em 0em;
 }
 
 #hebergement ul {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 #hebergement img {
     width: 18em;
     height: 8em;
-    border-radius: 1em 1em 0em 0em;
+    border-radius: 1em 1em 0em 0em;  
+    object-fit: cover;
 }
 
 #hebergement li {
@@ -230,9 +233,8 @@ section {
     height: 13.5em;
     border-radius: 1em;
     text-align: left;
-    margin-bottom: 2em;
-
-    
+    margin-bottom: 2em;    
+    box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;    
 }
 
 #hebergement h2 {
@@ -258,4 +260,43 @@ section {
 .greystar {
     font-size: 0.9em;
     color: rgb(196, 196, 196);
+}
+
+.afficher {
+    font-weight: 700;
+    color: black;
+}
+
+    /* Aside */
+
+aside {
+    background-color: gray;
+    width: 38em;
+    height: 42em;
+    padding: 0em 1.8em 0em 1.8em;
+    border-radius: 1em;
+}
+
+#titre_aside {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0em 1em 0em;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+}
+
+aside img {
+    width: 14em;
+    height: 10em;
+    border-radius: 1em 0em 0em 1em;
+
+}
+
+aside li {
+    background-color: white;
+    border: white solid;
+    border-radius: 1em;
 }
