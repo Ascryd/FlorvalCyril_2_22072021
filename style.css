@@ -1,3 +1,13 @@
+* {box-sizing: border-box;}
+html,body,ul,li,h1,h2,h3,h4,h5,p,img {margin: 0; padding: 0; font-weight: normal;}
+body {font-size: 16px; font-weight: normal;}
+h1,h2,h3,h4,h5,p {font-size: 1rem;}
+img {display: block;}
+a {color: black; text-decoration: none;}
+ul {list-style-type: none;}
+
+
+
 @font-face {
     font-family: "raleway";
     src: url("polices/raleway.ttf") format("ttf");
@@ -5,15 +15,11 @@
     font-style: normal;
 }
 
-/* page entière */
+/* page entière */ 
 
 #blocpage {
-    margin: 1.1em 11em 0em 11em;
-}
-
-* {
-    margin: 0em;
-    padding: 0em;
+    margin: 1.1em auto 0em auto;
+    max-width: 100em;
 }
 
 body {
@@ -31,7 +37,7 @@ header {
 #titre_principal {
     display: flex;
     flex-direction: column;
-    width:60em;
+    width:auto;
 }
 
 header img {
@@ -42,7 +48,12 @@ header img {
     margin-top: 3em;
 }
 
-h3 {
+header h2 {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+header h3 {
     padding-top: 0.3em;
     font-size: 0.9em;
     font-weight: 500;
@@ -53,21 +64,21 @@ h3 {
 nav{
     height: 3em;
     width: 30em;
-
     margin-top: 1.1em;
 }
 
-a {
-    text-decoration: none;
+#nav1 {
+
+}
+
+#nav1 a{
+    color: blue;
+    border-top: blue solid 3px;
+    padding-top: 2em;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-.menu a:visited {
-    color: rgb(0, 0, 0);
-
 }
 
 #inscrire {
@@ -79,7 +90,11 @@ a:hover {
     color: rgb(0, 47, 255);
 }
 
-ul {
+nav a {
+    padding: 0em 2em;
+}
+
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -109,20 +124,23 @@ ul {
 
 #ville i {
     text-align: center;
-    padding: 0.9em 0em 1em 0em;
-    width: 3em;
+    padding: 1em 0;
+    width: 45px;
     border-radius: 1em 0em 0em 1em;
     background-color:#F2F2F2;
 
 }
 
+#ville p {
+    display: flex;
+}
+
 .case {
     width: 20em;
-    padding: 0.69em 0em 0.70em 1em;
+    padding-left: 1em;
     border: none;
     border-top: solid thin #F2F2F2;
     border-bottom: solid thin #F2F2F2;
-    margin-left: -0.3em;
     font-weight:600;
     font-size: 1.1em;
 }
@@ -130,8 +148,6 @@ ul {
 .bouton {
     background-color: rgb(0, 119, 255);
     color: white;
-    padding: 1.25em 0em 1.14em 0em;
-    margin-left: -0.35em;
     border: none;
     width: 10em;
     border-radius: 0em 1em 1em 0em;
@@ -151,13 +167,17 @@ input[type="search"]{
 
 #filtres {
     font-size: 1.2em;
-    width: 55em;
+    max-width: 55em;
 }
 
 #filtres p{
+    margin: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 700;
+    flex-wrap: wrap;
+
 }
 
 #filtres a {
@@ -167,6 +187,7 @@ input[type="search"]{
     font-weight: 700;
     border: rgba(0, 102, 255, 0.267) solid thin;
     border-radius: 15em;
+    margin: 0.5em 0.3em;
 }
 
 #filtres p :hover {
@@ -191,12 +212,13 @@ input[type="search"]{
 
 /* section */
 
+
 section {
     margin-top: 2.5em;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 section h2 {
@@ -222,22 +244,26 @@ section p {
 #hebergement {
     background-color: #F2F2F2;
     padding: 0em 1.8em 0em 1.8em;
-    width: 60em;
+    width: 65em;
     min-height: 42em;
     border-radius: 1em;
+    order: 2;
 }
 
 #hebergement h1 {
-    padding: 2em 0em 1em 0em;
+    padding: 2em 0em 1.5em 0em;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 #hebergement ul {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 #hebergement img {
-    width: 18em;
+    width: 100%;
     height: 8em;
     border-radius: 17px 17px 0px 0px;  
     object-fit: cover;
@@ -249,8 +275,10 @@ section p {
     height: 13.5em;
     border-radius: 20px;
     text-align: left;
-    margin-bottom: 2em;    
+    margin: 1.5em 1em; 
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px; 
+    flex: 1;
+    min-width: 18em;
 }
 
 #hebergement h2 {
@@ -285,16 +313,23 @@ section p {
 
 aside {
     background-color: #F2F2F2;
-    width: 25em;
+    width: 26em;
     height: auto;
     padding: 0em 1.8em 0em 1.8em;
     border-radius: 1em;
+    order: 1;
+    margin: 0 auto;
 }
 
 #titre_aside {
     display: flex;
     justify-content: space-between;
     padding: 2em 0em 1em 0em;
+}
+
+aside h1 {
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 #titre_aside i {
@@ -307,11 +342,11 @@ aside ul{
 }
 
 aside img {
-    width: 9em;
+    min-width: 9em;
+    max-width: 9em;
     height: 10em;
     border-radius: 17px 0px 0px 17px;
     object-fit: cover;
-
 }
 
 aside li {
@@ -322,6 +357,7 @@ aside li {
     width: 22em;
     padding-right: 1.5em;
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;
+    flex: 1;
 }
 
 aside a {
@@ -346,9 +382,10 @@ aside p {
     /* activités */
 
 #activités {
-    height: 35em;
-    width: 100%;
+    min-height: 35em;
+    width: 100em;
     margin-top: 4em;
+    order: 3;
 }
 
 #activités h1{
@@ -358,6 +395,12 @@ aside p {
 #activités ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    border: blue solid;
+}
+
+#activités li {
+    /* flex: 1; */
 }
 
 #activités img {
@@ -374,7 +417,7 @@ aside p {
     border-radius: 15px;
     background-color: white;
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;
-    height: 29em;
+    height: 28.5em;
 }
 
 .little_pics {
@@ -386,7 +429,7 @@ aside p {
     border-radius: 15px;
     background-color: white;
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;
-    height: 13.5em;
+    height: 13em;
 }
 
 .pomègues {
@@ -398,12 +441,12 @@ aside p {
     border-radius: 15px;
     background-color: white;
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;
-    height: 16em;
+    height: 15.5em;
 }
 
 .frioul {
     width: 23em;
-    height: 8em;
+    height: 8.5em;
     box-shadow: rgb(129, 129, 129) 0px 0px 18px 1px;
 }
 
@@ -415,10 +458,16 @@ aside p {
 }
 
 .colonne {
-    height: 29em;
+    max-height: 28.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: rgb(252, 0, 0) solid;
+}
+
+#activités h1 {
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 #activités h2 {
@@ -429,33 +478,41 @@ aside p {
 /* Footer */
 
 footer {
+    width: 100%;
     display: flex;
     background-color: #F2F2F2;
     padding-bottom: 3em;
+    flex-wrap: wrap;
 }
 
 .infos {
+    width: 30%;
     padding-top: 1em;
 }
 
 .infos h1 {
     font-size: 1.3em;
     padding-bottom: 0.5em;
+    font-weight: 600;
 }
 
 .infos p {
     padding-top: 0.5em;
 }
 
-#a_propos {
+/* #a_propos {
     padding-left: 15em;
     padding-right: 18em;
 }
 
 #nos_hebergements {
     padding-right: 18em
-}
+} */
 
 footer a {
     color: black;
 }
+
+/* @media screen and (min-width 750px) {
+    
+} */
