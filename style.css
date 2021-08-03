@@ -272,7 +272,7 @@ section p {
 #hebergement li {
     border: rgb(255, 255, 255) solid 5px;
     background-color: white;
-    height: 13.5em;
+    height: 13.8em;
     border-radius: 20px;
     text-align: left;
     margin: 1.5em 1em; 
@@ -396,11 +396,6 @@ aside p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: blue solid;
-}
-
-#activités li {
-    /* flex: 1; */
 }
 
 #activités img {
@@ -462,7 +457,6 @@ aside p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: rgb(252, 0, 0) solid;
 }
 
 #activités h1 {
@@ -478,11 +472,19 @@ aside p {
 /* Footer */
 
 footer {
+    position: absolute;
+    left: 0em;
     width: 100%;
-    display: flex;
     background-color: #F2F2F2;
     padding-bottom: 3em;
+    
+}
+
+#infos {
+    display: flex;
     flex-wrap: wrap;
+    max-width: 100em;
+    margin: 0 auto;
 }
 
 .infos {
@@ -500,19 +502,11 @@ footer {
     padding-top: 0.5em;
 }
 
-/* #a_propos {
-    padding-left: 15em;
-    padding-right: 18em;
-}
-
-#nos_hebergements {
-    padding-right: 18em
-} */
-
 footer a {
     color: black;
 }
 
-/* @media screen and (min-width 750px) {
-    
-} */
+/* @media screen and (max-width: 1620px) {
+    #hebergement {
+        width: 100%;
+    } */
