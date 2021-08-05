@@ -38,6 +38,7 @@ header {
     display: flex;
     flex-direction: column;
     width:auto;
+    padding-left: 1em;
 }
 
 header img {
@@ -60,6 +61,10 @@ header h3 {
 }
 
 /* Header, nav */
+
+#nav_mobile {
+    display: flex;
+}
 
 nav{
     height: 3em;
@@ -150,9 +155,19 @@ nav ul {
     cursor: pointer;
 }
 
+.bouton:before {
+    content: "f002";
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
 input[type="search"]{
     outline-style: none;
 }
+
+/* input[type="submit"] {
+    font-family: FontAwesome;
+} */
 
 ::placeholder {
     color: black;
@@ -195,8 +210,8 @@ input[type="search"]{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2em;
-    height: 2em;
+    width: 2.1em;
+    height: 2.1em;
     border-radius: 100%;
     background-color: rgba(0, 102, 255, 0.267);
 }
@@ -205,7 +220,9 @@ input[type="search"]{
     padding: 0em 1em 0em 0.5em
 }
 
-
+#filtres a:hover {
+    background-color: #F2F2F2;
+}
 /* section */
 
 
@@ -517,12 +534,12 @@ footer a {
     }
 
     aside ul {
-        width: 25em;
+        width: 23em;
     }
 
 
     #titre_aside {
-        width: 25em;
+        width: 15em;
         text-align: center;
     }
 }
@@ -565,4 +582,64 @@ footer a {
         flex: 1;
         min-width: 18em;
     }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    #sous-titres {
+        position: relative;
+        margin-top: 6em;
+        min-width: 18em;
+    }
+
+    #inscrire {
+        position: absolute;
+        top: 2em;
+        right: 1em
+    }
+
+    #nav_mobile {
+        position: absolute;
+        left: 0;
+        top: 7em;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /* padding-bottom: 1em; */
+
+    }
+     
+    #nav1 {
+        border-bottom: rgb(55, 0, 255) solid;
+        width: 100%;
+        padding-bottom: 0.8em;
+        text-align: center;
+    }
+
+    #nav2 {
+        border-bottom: #F2F2F2 solid;
+        width: 100%;
+        padding-bottom: 0.8em;
+        text-align: center;
+    }
+
+    #nav1 a{
+        border-top: none;
+    }
+
+    /* Barre de recherche */
+
+    .case {
+        width: auto;
+    }
+
+    .bouton {
+        width: auto
+    }
+
+    .bouton:before {
+        content: 
+    }
+
 }

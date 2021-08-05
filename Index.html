@@ -12,7 +12,7 @@
         <div id=blocpage>
             <header>
                 <div id="titre_principal">
-                <img src="images/logo/Reservia@3x.png">
+                    <img src="images/logo/Reservia@3x.png">
                     <div id=sous-titres>
                         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <h3>En plein centre ville ou en pleine nature</h3>
@@ -21,9 +21,11 @@
             
                 <nav>
                     <ul>
-                        <li id="nav1"><a href="#hebergement">Hébergements</a></li>
-                        <li id="nav2"><a href="#activités">Activités</a></li>
-                        <li id=inscrire><a href="#">S'inscrire</a></li>
+                        <div id="nav_mobile">
+                            <li class="H-A_mobile" id="nav1"><a href="#hebergement">Hébergements</a></li>
+                            <li class="H-A_mobile" id="nav2"><a href="#activités">Activités</a></li>
+                        </div>
+                     <li id=inscrire><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
             </header>
@@ -32,8 +34,9 @@
                     <form method=post action=traitement.php>
                         <p>
                             <i class="fas fa-map-marker-alt"></i>
-                            <input class="case" type="search" name=ville placeholder="Marseille, France">
-                            <input class="bouton" type="submit" value="Rechercher">
+                            <input class="case" type="search" name=ville placeholder="Marseille, France"/>
+                            <!-- <input class="bouton" type="submit" value="&#xf002" /> -->
+                            <button type="submit" class="bouton" value=&#xf002></button>
                         </p>
                     </form>
                 </div>
@@ -41,7 +44,7 @@
                     <form method=post action=traitement.php>
                         <p>
                             Filtres 
-                            <a href="#"><i class="fas fa-money-bill-wave-alt"></i><span class="filtres">Économique</span></a>
+                            <a href="#"><i class="fas fa-money-bill-wave"></i><span class="filtres">Économique</span></a>
                             <a href="#"><i class="fas fa-child"></i><span class="filtres">Familial</span></a>
                             <a href="#"><i class="fas fa-heart"></i><span class="filtres">Romantique</span></a>
                             <a href="#"><i class="fas fa-dog"></i><span class="filtres">Animaux autorisée</span></a>
