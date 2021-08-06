@@ -73,8 +73,8 @@ nav{
 }
 
 #nav1 a{
-    color: blue;
-    border-top: blue solid 3px;
+    color: #0065FC;
+    border-top: #0065FC solid 3px;
     padding-top: 2em;
 }
 
@@ -83,12 +83,12 @@ a:hover {
 }
 
 #inscrire {
-    color: rgb(0, 47, 255);
+    color: #0065FC;
     font-weight: bolder;
 }
 
 #inscrire a:visited {
-    color: rgb(0, 47, 255);
+    color: #0065FC ;
 }
 
 nav a {
@@ -103,7 +103,7 @@ nav ul {
 }
 
 #hébergements {
-    color: rgb(0, 140, 255);
+    color: #0065FC;
 }
 
 
@@ -111,16 +111,15 @@ nav ul {
     /* Recherche */
 
 #recherche {
-    height: 12em;
+    height: auto;
     margin-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 1em;
 }
 
 #ville {
-    border-radius: 0.5em;
+    margin-left: 0.5em;
 }
 
 #ville i {
@@ -147,7 +146,7 @@ nav ul {
 }
 
 .bouton {
-    background-color: rgb(0, 119, 255);
+    background-color: #0065FC;
     color: white;
     border: none;
     width: 10em;
@@ -206,7 +205,7 @@ input[type="search"]{
 }
 
 #filtres i {
-    color: rgb(0, 119, 255);
+    color: #0065FC;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,8 +222,9 @@ input[type="search"]{
 #filtres a:hover {
     background-color: #F2F2F2;
 }
-/* section */
 
+
+/* section */
 
 section {
     margin-top: 2.5em;
@@ -251,6 +251,7 @@ section p {
     text-decoration: none;
     color: black;
 }
+
 
     /* Hébergement */
 
@@ -308,7 +309,7 @@ section p {
 
 .bluestar {
     font-size: 0.9em;
-    color: rgb(0, 119, 255);
+    color: #0065FC;
 }
 
 .greystar {
@@ -542,6 +543,8 @@ footer a {
         width: 15em;
         text-align: center;
     }
+
+
 }
 
 
@@ -606,12 +609,10 @@ footer a {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        /* padding-bottom: 1em; */
-
     }
      
     #nav1 {
-        border-bottom: rgb(55, 0, 255) solid;
+        border-bottom: #0065FC solid;
         width: 100%;
         padding-bottom: 0.8em;
         text-align: center;
@@ -635,11 +636,22 @@ footer a {
     }
 
     .bouton {
-        width: auto
+        width: auto;
     }
 
-    .bouton:before {
+    /* .bouton:before {
         content: 
+    } */
+
+    .filtre {
+        width: 100%;
     }
 
+    #activités {
+        padding: 0 0.5em;
+    }
+
+    #hebergement {
+        padding: 0 0.5em;
+    }
 }
