@@ -33,10 +33,12 @@
                 <div id=ville>
                     <form method=post action=traitement.php>
                         <p>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="position"><i class="fas fa-map-marker-alt"></i></span>
                             <input class="case" type="search" name=ville placeholder="Marseille, France"/>
-                            <!-- <input class="bouton" type="submit" value="&#xf002" /> -->
-                            <button type="submit" class="bouton" value= ></button>
+                            <button type="submit" class="bouton">
+                                <span id="text_bouton">Rechercher</span>
+                                <i class="fas fa-search"></i>
+                            </button>
                         </p>
                     </form>
                 </div>

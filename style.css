@@ -121,7 +121,7 @@ nav ul {
     margin-left: 0.5em;
 }
 
-#ville i {
+#position i {
     text-align: center;
     padding: 1em 0;
     width: 45px;
@@ -148,24 +148,18 @@ nav ul {
     background-color: #0065FC;
     color: white;
     border: none;
-    width: 10em;
-    border-radius: 0em 1em 1em 0em;
+    min-width: 3.8em;
+    border-radius: 1em;
     cursor: pointer;
-}
-
-.bouton:before {
-    content: "f002";
-    font-size: 1.3em;
-    font-weight: 550;
+    position: relative;
+    right: 2em;
 }
 
 input[type="search"]{
     outline-style: none;
-}
+    -webkit-appearance: searchfield-cancel-button none;
 
-/* input[type="submit"] {
-    font-family: FontAwesome;
-} */
+}
 
 ::placeholder {
     color: black;
@@ -661,13 +655,6 @@ footer a {
         width: auto;
     }
 
-    .bouton {
-        width: auto;
-    }
-
-    /* .bouton:before {
-        content: 
-    } */
 
     .filtre {
         width: 100%;
@@ -699,5 +686,27 @@ footer a {
 
     #activités {
         text-align: left;
+    }
+
+    #text_bouton {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    .bouton {
+        background-color: #0065FC;
+        color: white;
+        border: none;
+        width: 9em;
+        border-radius: 0em 1em 1em 0em;
+        cursor: pointer;
+        font-size: 1em;
+        position: static;
+    }
+
+    .bouton i {
+        display: none
     }
 }
