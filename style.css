@@ -157,8 +157,6 @@ nav ul {
 
 input[type="search"]{
     outline-style: none;
-    -webkit-appearance: searchfield-cancel-button none;
-
 }
 
 ::placeholder {
@@ -182,7 +180,6 @@ input[type="search"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: thin;
 }
 
     /* Filtres */
@@ -359,7 +356,7 @@ aside {
     width: 20em;
 }
 
-aside h1 {
+aside h3 {
     font-weight: 700;
     font-size: 1.2em;
 }
@@ -383,7 +380,7 @@ aside img {
 }
 
 aside li {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: white solid 5px;
     border-radius: 20px;
     margin-top: 1.4em;
@@ -525,7 +522,7 @@ footer {
     padding-top: 1em;
 }
 
-.infos h1 {
+.infos h2 {
     font-size: 1.3em;
     padding-bottom: 0.5em;
     font-weight: 800;
