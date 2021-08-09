@@ -61,11 +61,8 @@ header h3 {
 
 /* Header, nav */
 
-#nav_mobile {
-    display: flex;
-}
-
 nav{
+    display: flex;
     height: 3em;
     width: 30em;
     margin-top: 1.1em;
