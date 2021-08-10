@@ -78,7 +78,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#inscrire {
+#inscrire a {
     color: #0065FC;
     font-weight: bolder;
 }
@@ -355,7 +355,7 @@ aside {
 
 aside h3 {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #titre_aside i {
@@ -480,7 +480,7 @@ aside p {
 }
 
 .colonne {
-    max-height: 28.5em;
+    min-height: 28.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -503,8 +503,7 @@ footer {
     left: 0em;
     width: 100%;
     background-color: #F2F2F2;
-    padding-bottom: 3em;
-    
+    padding-bottom: 3em;   
 }
 
 #infos {
@@ -512,6 +511,7 @@ footer {
     flex-wrap: wrap;
     max-width: 100em;
     margin: 0 auto;
+    padding-left: 2em;
 }
 
 .infos {
@@ -583,7 +583,7 @@ footer a {
         object-fit: cover;
     }
 
-    #activités li {
+    .big_pics_name, .pomègues_name, .frioul_name, .little_pics_name {
         background-color: white;
         height: 13.8em;
         border-radius: 20px;
@@ -664,6 +664,7 @@ footer a {
 
     #infos {
         flex-direction: column;
+        padding-left: 0;
     }
 
     /* Footer */
