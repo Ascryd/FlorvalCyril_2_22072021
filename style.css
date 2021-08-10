@@ -6,14 +6,6 @@ img {display: block;}
 a {color: black; text-decoration: none;}
 ul {list-style-type: none;}
 
-
-@font-face {
-    font-family: "raleway";
-    src: url("polices/raleway.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* page entière */ 
 
 #blocpage {
