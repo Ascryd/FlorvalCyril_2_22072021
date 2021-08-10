@@ -405,6 +405,7 @@ aside p {
     width: 100em;
     margin-top: 4em;
     order: 3;
+    padding: 0 1em 0 1em;
 }
 
 #activités h1{
