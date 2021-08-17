@@ -89,7 +89,6 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-
 }
 
 #hébergements {
@@ -167,7 +166,6 @@ input[type="search"]{
 #disponibilité i{
     font-size: 10px;
     margin-right: 0.5em;
-    margin-left: 8px;
     color: #0065FC;
     border: #d8d7d7 solid thin;
     min-width: 18px;
@@ -192,13 +190,12 @@ input[type="search"]{
 
 #filtres p{
     font-size: 15px;
-    margin: 23px 8px;
+    margin: 23px 0;
     display: flex;
     column-gap: 20px;
     align-items: center;
     font-weight: 700;
     flex-wrap: wrap;
-
 }
 
 #filtres a {
@@ -208,7 +205,7 @@ input[type="search"]{
     font-weight: 700;
     border: rgba(0, 102, 255, 0.267) solid thin;
     border-radius: 15em;
-    margin: 0.5em 0.3em;
+    margin: 7px 0;
 }
 
 #filtres p :hover {
@@ -239,10 +236,6 @@ input[type="search"]{
 
 section {
     margin-top: 2.5em;
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 #top_section {
@@ -289,7 +282,7 @@ section p {
 #hebergement h1 {
     font-weight: 700;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #hebergement ul {
@@ -297,8 +290,7 @@ section p {
     flex-wrap: wrap;
     column-gap: 25px;
     row-gap: 20px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;    
 }
 
 #hebergement img {
@@ -371,7 +363,7 @@ aside {
 
 #titre_aside {
     display: flex;
-    gap: 60px;
+    gap: 30px;
     padding: 2em 0em 1em 0em;
     width: auto;
 }
@@ -394,6 +386,8 @@ aside ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 aside img {
@@ -412,7 +406,6 @@ aside li {
     width: 244px;
     box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
     flex: 1;
-    
 }
 
 aside a {
@@ -432,7 +425,6 @@ aside p {
 }
 
 .aside_star {
-    /* padding-top: 3em; */
     font-size: 10px;
     position: absolute;
     bottom: 3px;
@@ -468,7 +460,6 @@ aside p {
     background-color: white;
     box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
     height: 316px;
-    /* border: black solid; */
 }
 
 .little_pics {
@@ -565,7 +556,7 @@ aside p {
 
 footer {
     position: absolute;
-    left: 0em;
+    left: 0;
     width: 100%;
     background-color: #F2F2F2;
     padding-bottom: 3em;   
@@ -577,7 +568,7 @@ footer {
     flex-wrap: wrap;
     max-width: 100em;
     margin: 0 auto;
-    padding-left: 2em;
+    margin-left: 35px;
 }
 
 .infos {
@@ -600,80 +591,6 @@ footer a {
     color: black;
 }
 
-@media screen and (max-width: 700px) {
-
-    #top_section {
-        flex-direction: column;
-    }
-
-    #hebergement h1 {
-        margin-left: 15px;
-    }
-
-    #hebergement h2 {
-        font-size: 16px;
-    }
-
-    #hebergement p {
-        font-size: 15px;
-    }
-
-    .hebergement_star {
-        font-size: 12px;
-    }
-
-    #hebergement {
-        width: 100%;
-        max-width: none;
-        background-color: rgba(255, 255, 255, 0);
-    }
-
-    aside {
-        width: 100%;
-        max-width: none;
-        border-radius: 0;
-        padding-bottom: 35px;
-    }
-
-    aside ul {
-        width: 23em;
-    }
-
-    aside img {
-        min-width: 126px;
-        max-width: 126px;
-        height: 133px;
-    }
-
-    aside li {
-        width: 332px;
-    }
-
-    #titre_aside {
-        gap: 110px;
-        font-size: 18px;
-    }
-
-    aside h3 {
-        font-size: 16px;
-    }
-
-    aside p {
-        font-size: 15px;
-    }
-
-    .aside_star {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-
-    #hebergement img {
-        height: 115px;
-    }
-}
-
 @media screen and (max-width: 1023px) {
     
     #activité_global {
@@ -681,55 +598,24 @@ footer a {
     }
 }
 
-@media screen and (max-width: 480px) {
-
-    #activités ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #activités img {
-        width: 100%;
-        height: 8em;
-        border-radius: 17px 17px 0px 0px;
-        object-fit: cover;
-    }
-
-    #activités h2 {
-        font-size: 16px;
-    }
-
-    .big_pics_name, .pomègues_name, .frioul_name, .little_pics_name {
-        background-color: white;
-        height: 13.8em;
-        border-radius: 20px;
-        text-align: left;
-        margin: 0 1em;
-        box-shadow: gray 0px 0px 18px 1px;
-        flex: 1;
-        /* min-width: 335px; */
-        /* width: 100%; */
-    }
-}
-
 
 @media screen and (max-width: 700px) {
+    
+    #blocpage {
+        padding: 0 20px;
+    }
+
 
     /* Header */
-
-    #titre_principal, #sous-titres, #disponibilité p, #filtres p, #ville p {
-        margin-left: 10px;
-    }
-
-    #blocpage {
-        padding: 0;
-    }
 
     #sous-titres {
         position: relative;
         margin-top: 6em;
         min-width: 18em;
     }
+
+
+    /* Nav */
 
     #inscrire {
         position: absolute;
@@ -772,24 +658,88 @@ footer a {
         border-top: none;
     }
 
+    
     /* Barre de recherche */
 
     .case {
         width: auto;
     }
 
-
     .filtre {
         width: 100%;
     }
+    
+    #text_bouton {
+        display: none;
+        
+    }
 
-    #activités {
-        padding: 0 0.5em;
+
+    /* Section */
+
+    #top_section {
+        flex-direction: column;
+    }
+
+    #hebergement h2 {
+        font-size: 16px;
+    }
+
+    #hebergement p {
+        font-size: 15px;
+    }
+
+    .hebergement_star {
+        font-size: 12px;
     }
 
     #hebergement {
-        padding: 0 0.5em;
+        margin-top: 650px;
+        width: 100%;
+        max-width: none;
+        background-color: rgba(255, 255, 255, 0);
     }
+    
+    #hebergement {
+        padding: 0 0;
+    }
+
+    aside {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        padding-bottom: 35px;
+    }
+
+    aside img {
+        min-width: 126px;
+        max-width: 126px;
+        height: 133px;
+    }
+
+    aside li {
+        width: 335px;
+    }
+
+    #titre_aside {
+        gap: 110px;
+        font-size: 18px;
+    }
+
+    aside h3 {
+        font-size: 16px;
+    }
+
+    aside p {
+        font-size: 15px;
+    }
+
+    .aside_star {
+        font-size: 13px;
+    }
+
 
     /* Footer */
 
@@ -805,7 +755,7 @@ footer a {
 
     .infos {
         width: auto;
-        margin-left: 2em;
+        padding-left: 20px;
     }
 
     .infos h2 {
@@ -819,12 +769,46 @@ footer a {
     #activités {
         text-align: left;
     }
+}
 
-    #text_bouton {
-        display: none;
-        
+
+@media screen and (max-width: 480px) {
+
+    #activités ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activités img {
+        width: 100%;
+        height: 8em;
+        border-radius: 17px 17px 0px 0px;
+        object-fit: cover;
+    }
+
+    #activités h2 {
+        font-size: 16px;
+    }
+
+    .big_pics_name, .pomègues_name, .frioul_name, .little_pics_name {
+        background-color: white;
+        height: 13.8em;
+        border-radius: 20px;
+        text-align: left;
+        margin: 0 1em;
+        box-shadow: gray 0px 0px 18px 1px;
+        flex: 1;
     }
 }
+
+
+@media screen and (max-width: 390px) {
+
+    #hebergement img {
+        height: 115px;
+    }
+}
+
 
 @media screen and (min-width: 700px) {
     
