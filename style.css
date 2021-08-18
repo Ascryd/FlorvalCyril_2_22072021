@@ -63,7 +63,7 @@ nav{
 #nav1 a{
     color: #0065FC;
     border-top: #0065FC solid 3px;
-    padding-top: 23px;
+    padding-top: 25px;
     width: 100%;
 }
 
@@ -82,7 +82,7 @@ nav a:hover {
 
 nav a {
     padding: 0em 2em;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 nav ul {
@@ -566,9 +566,10 @@ footer {
 #infos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100em;
-    margin: 0 auto;
-    margin-left: 35px;
+    max-width: 1370px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 36px;
 }
 
 .infos {
@@ -590,6 +591,11 @@ footer {
 footer a {
     color: black;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width: 1023px) {
     
