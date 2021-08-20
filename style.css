@@ -9,9 +9,9 @@ ul {list-style-type: none;}
 /* page entière */ 
 
 #blocpage {
-    margin: 1.1em auto 0em auto;
+    margin: 50px auto 0em auto;
     max-width: 1440px;
-    padding: 0 35px;
+    padding: 0 50px;
 }
 
 body {
@@ -33,7 +33,7 @@ header {
 }
 
 header img {
-    width: 5em;
+    width: 6em;
 }
 
 #sous-titres {
@@ -41,13 +41,13 @@ header img {
 }
 
 header h2 {
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: 700;
 }
 
 header h3 {
-    padding-top: 0.3em;
-    font-size: 0.9em;
+    padding-top: 0.5em;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -63,12 +63,15 @@ nav{
 #nav1 a{
     color: #0065FC;
     border-top: #0065FC solid 3px;
-    padding-top: 25px;
+    padding-top: 56px;
     width: 100%;
 }
 
 nav a:hover {
     color: #0065FC;
+    border-top: #0065FC solid 3px;
+    padding-top: 25px;
+    width: 100%;
 }
 
 #inscrire a {
@@ -82,7 +85,7 @@ nav a:hover {
 
 nav a {
     padding: 0em 2em;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 nav ul {
@@ -109,11 +112,11 @@ nav ul {
 
 
 #position i {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
-    padding: 0.7em 0;
+    padding: 1em 0;
     width: 45px;
-    height: 40px;
+    height: 50px;
     border-radius: 1em 0em 0em 1em;
     background-color:#F2F2F2;
 
@@ -121,7 +124,7 @@ nav ul {
 
 #ville p {
     display: flex;
-    height: 40px;
+    height: 50px;
 }
 
 .case {
@@ -131,22 +134,26 @@ nav ul {
     border-top: solid thin #F2F2F2;
     border-bottom: solid thin #F2F2F2;
     font-weight:600;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .bouton {
     background-color: #0065FC;
     color: white;
     border: none;
-    min-width: 45px;
+    min-width: 55px;
     border-radius: 1em;
     cursor: pointer;
     position: relative;
     right: 2em;
 }
 
+.bouton i {
+    font-size: 1.3em;
+}
+
 #text_bouton {
-    font-size: 14px;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
@@ -159,40 +166,13 @@ input[type="search"]{
     opacity: 1;
 }
 
-#disponibilité {
-    display: flex;
-}
-
-#disponibilité i{
-    font-size: 10px;
-    margin-right: 0.5em;
-    color: #0065FC;
-    border: #d8d7d7 solid thin;
-    min-width: 18px;
-    min-height: 18px;
-    max-width: 18px;
-    max-height: 18px;
-    border-radius: 30em 30em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#disponibilité p {
-    font-size: 13px;
-}
-
     /* Filtres */
 
-#filtres {
-    font-size: 1em;
-}
-
 #filtres p{
-    font-size: 15px;
+    font-size: 18px;
     margin: 23px 0;
     display: flex;
-    column-gap: 20px;
+    column-gap: 25px;
     align-items: center;
     font-weight: 700;
     flex-wrap: wrap;
@@ -219,8 +199,8 @@ input[type="search"]{
     justify-content: center;
     width: 2.5em;
     height: 2.5em;
-    border-radius: 100%;
-    background-color: rgba(0, 102, 255, 0.267);
+    border-radius: 16em;
+    background-color: rgba(0, 102, 255, 0.233);
 }
 
 .filtres {
@@ -231,6 +211,29 @@ input[type="search"]{
     background-color: #F2F2F2;
 }
 
+#disponibilité {
+    display: flex;
+    align-items: center;
+}
+
+#disponibilité i{
+    font-size: 11px;
+    margin-right: 0.5em;
+    color: #0065FC;
+    border: #d8d7d7 solid thin;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    border-radius: 30em 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#disponibilité p {
+    font-size: 16px;
+}
 
 /* section */
 
@@ -241,6 +244,7 @@ section {
 #top_section {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     gap: 30px;
     height: auto;
 }
@@ -271,31 +275,31 @@ section p {
 
 #hebergement {
     background-color: #F2F2F2;
-    padding: 35px 25px 35px 25px;
+    padding: 40px;
     width: 100%;
-    max-width: 625px;
+    max-width: 880px;
     height: auto;
     border-radius: 1em;
     order: 2;
+    gap: 30px;
 }
 
 #hebergement h1 {
     font-weight: 700;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.3em;
+    margin-bottom: 25px;
 }
 
 #hebergement ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 25px;
-    row-gap: 20px;
-    margin-bottom: 20px;    
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
 #hebergement img {
     width: 100%;
-    height: 80px;
+    height: 115px;
     border-radius: 9px 9px 0px 0px;  
     object-fit: cover;
 }
@@ -309,23 +313,24 @@ section p {
     box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px; 
     flex: 1;
     max-width: 400px;
-    min-width: 175px;
+    min-width: 190px;
 }
 
 #hebergement h2 {
     padding: 0.5em 0em 0.4em 0.5em;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 #hebergement p {
     padding: 0em 0em 0.4em 0.5em;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .hebergement_star {
     padding-left: 0.5em;
-    font-size: 10px;
+    font-size: 12px;
+    padding-bottom: 6px;
 }
 
 .bluestar {
@@ -339,10 +344,10 @@ section p {
 }
 
 .afficher {
-    font-size: 15px;
-    margin-left: 15px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     color: black;
+
 }
 
 
@@ -351,7 +356,8 @@ section p {
 aside {
     background-color: #F2F2F2;
     width: 100%;
-    max-width: 297px;
+    max-width: 420px;
+    min-width: 375px;
     height: auto;
     border-radius: 1em;
     order: 1;
@@ -359,12 +365,13 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 #titre_aside {
     display: flex;
-    gap: 30px;
-    padding: 2em 0em 1em 0em;
+    gap: 130px;
+    padding-top: 40px;
     width: auto;
 }
 
@@ -375,7 +382,7 @@ aside h2 {
 
 aside h3 {
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #titre_aside i {
@@ -387,13 +394,13 @@ aside ul{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    gap: 30px;
 }
 
 aside img {
-    min-width: 90px;
-    max-width: 90px;
-    height: 96px;
+    min-width: 130px;
+    max-width: 130px;
+    height: 135px;
     border-radius: 9px 0px 0px 9px;
     object-fit: cover;
 }
@@ -402,8 +409,7 @@ aside li {
     background-color: rgb(255, 255, 255);
     border: white solid 4px;
     border-radius: 11px;
-    margin-top: 22px;
-    width: 244px;
+    width: 345px;
     box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
     flex: 1;
 }
@@ -421,17 +427,83 @@ aside a {
 
 aside p {
     padding-top: 0.5em;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .aside_star {
-    font-size: 10px;
+    font-size: 12px;
     position: absolute;
-    bottom: 3px;
+    bottom: 6px;
 }
 
 
     /* activités */
+
+.ndg {
+    width: 100%;
+    height: 137px;
+}
+
+.ndg_name {
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    height: 193px;
+}
+
+.longchamps {
+    width: 100%;
+    height: 152px;
+}
+
+.longchamps_name {
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    height: 210px;
+}
+
+.pomègues {
+    width: 100%;
+    height: 182px;
+}
+
+.pomègues_name {
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    height: 238px;
+}
+
+.frioul {
+    width: 100%;
+    height: 108px;
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+}
+
+.frioul_name {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    height: 165px;
+    width: auto;
+}
+
+.big_pics {
+    width: 100%;
+    height: 390px;
+}
+
+.big_pics_name {
+    width: auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    height: 444px;
+}
 
 #activités {
     height: auto;
@@ -449,103 +521,43 @@ aside p {
     border-radius: 15px 15px 0px 0px;
 }
 
-.big_pics {
-    width: 100%;
-    height: 275px;
-}
-
-.big_pics_name {
-    min-width: 214px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
-    height: 316px;
-}
-
-.little_pics {
-    width: 100%;
-    height: 98px;
-}
-
-.little_pics_name {
-    min-width: 213px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
-    height: 139px;
-}
-
-.pomègues {
-    width: 100%;
-    height: 128px;
-}
-
-.pomègues_name {
-    min-width: 213px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
-    height: 168px;
-}
-
-.frioul {
-    width: 100%;
-    height: 77px;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
-}
-
-.frioul_name {
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
-    height: 114px;
-    min-width: 213px;
-}
-
-#activités ul {
-    display: flex;
-    gap: 25px;
-}
-
 #activité_global {
     display: flex;
-    border: black solid;
-    gap: 30px;
+    /* border: black solid; */
+    gap: 40px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.left {
-    /* background-color: rgba(0, 0, 255, 0.678); */
+.bloc {
+    height: 100%;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-}
-
-.right {
-    /* background-color: rgba(255, 0, 0, 0.767); */
-    display: flex;
-    justify-content: space-between;
+    /* border: red solid; */
+    min-width: 200px;
+    gap: 40px;
 }
 
 .colonne {
-    border: black solid;
-    min-width: 213px;
+    min-width: 200px;
     width: 100%;
-    height: 100%;
+    /* border: rgb(38, 0, 255) solid; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 40px;
     flex: 1;
 }
 
 #activités h1 {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 #activités h2 {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 700;
     padding-left: 14px;
-    height: 43px;
+    height: 54px;
     display: flex;
     flex-direction: column;
     justify-content: center;     
@@ -574,18 +586,18 @@ footer {
 
 .infos {
     width: 30%;
-    padding-top: 1em;
+    padding-top: 40px;
 }
 
 .infos h2 {
-    font-size: 15px;
+    font-size: 18px;
     padding-bottom: 0.5em;
     font-weight: 700;
 }
 
 .infos p {
     padding-top: 0.8em;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 footer a {
@@ -605,10 +617,11 @@ footer a:hover {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
     
     #blocpage {
         padding: 0 20px;
+        margin-top: 30px;
     }
 
 
@@ -625,7 +638,7 @@ footer a:hover {
 
     #inscrire {
         position: absolute;
-        top: 2em;
+        top: 45px;
         right: 1em
     }
 
@@ -636,10 +649,11 @@ footer a:hover {
     #nav_mobile {
         position: absolute;
         left: 0;
-        top: 90px;
+        top: 110px;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        order: 1;
     }
      
     #nav1 {
@@ -657,7 +671,11 @@ footer a:hover {
     }
 
     #nav2 a:hover {
-        border-top: none;
+        border-top: none; 
+    }
+
+    #nav2:hover {
+        border-bottom: #0065FC solid;
     }
 
     #nav1 a{
@@ -668,13 +686,17 @@ footer a:hover {
     /* Barre de recherche */
 
     .case {
-        width: auto;
+        width: 230px;
     }
 
     .filtre {
         width: 100%;
     }
     
+    #filtres p {
+        column-gap: 11px;
+    }
+
     #text_bouton {
         display: none;
         
@@ -772,16 +794,12 @@ footer a:hover {
         font-size: 15px;
     }
 
-    #activités {
-        text-align: left;
-    }
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 
-    #activités ul {
-        display: flex;
+    .bloc {
         flex-direction: column;
     }
 
@@ -792,16 +810,11 @@ footer a:hover {
         object-fit: cover;
     }
 
-    #activités h2 {
-        font-size: 16px;
-    }
-
-    .big_pics_name, .pomègues_name, .frioul_name, .little_pics_name {
+    .big_pics_name, .pomègues_name, .frioul_name, .ndg_name, .longchamps_name {
         background-color: white;
         height: 13.8em;
         border-radius: 20px;
         text-align: left;
-        margin: 0 1em;
         box-shadow: gray 0px 0px 18px 1px;
         flex: 1;
     }
@@ -816,7 +829,7 @@ footer a:hover {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 850px) {
     
     .bouton {
         background-color: #0065FC;
@@ -826,7 +839,11 @@ footer a:hover {
         cursor: pointer;
         font-size: 1em;
         position: static;
-        min-width: 96px;
+        min-width: 134px;
+    }
+
+    .case {
+        width: 15em;
     }
 
     .bouton i {
