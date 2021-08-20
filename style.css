@@ -56,7 +56,7 @@ header h3 {
 nav{
     display: flex;
     height: 3em;
-    width: auto;
+    width: 100%;
     margin-top: 0.5em;
 }
 
@@ -128,7 +128,9 @@ nav ul {
 }
 
 .case {
-    width: 15em;
+    min-width: 235px;
+    max-width: 300px;
+    width: 100%;
     padding-left: 1em;
     border: none;
     border-top: solid thin #F2F2F2;
@@ -183,7 +185,7 @@ input[type="search"]{
     display: flex;
     align-items: center;
     font-weight: 700;
-    border: rgba(0, 102, 255, 0.267) solid thin;
+    border: rgba(206, 206, 206, 0.842) thin solid ;
     border-radius: 15em;
     margin: 7px 0;
 }
@@ -279,7 +281,7 @@ section p {
     width: 100%;
     max-width: 880px;
     height: auto;
-    border-radius: 1em;
+    border-radius: 20px;
     order: 2;
     gap: 30px;
 }
@@ -300,7 +302,7 @@ section p {
 #hebergement img {
     width: 100%;
     height: 115px;
-    border-radius: 9px 9px 0px 0px;  
+    border-radius: 18px 18px 0px 0px;  
     object-fit: cover;
 }
 
@@ -308,9 +310,9 @@ section p {
     border: rgb(255, 255, 255) solid 4px;
     background-color: white;
     height: auto;
-    border-radius: 11px;
+    border-radius: 20px;
     text-align: left;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px; 
+    box-shadow: rgb(199, 199, 199) 0px 0px 20px 0px; 
     flex: 1;
     max-width: 400px;
     min-width: 190px;
@@ -359,7 +361,7 @@ aside {
     max-width: 420px;
     min-width: 375px;
     height: auto;
-    border-radius: 1em;
+    border-radius: 20px;
     order: 1;
     margin: 0 auto;
     display: flex;
@@ -401,16 +403,16 @@ aside img {
     min-width: 130px;
     max-width: 130px;
     height: 135px;
-    border-radius: 9px 0px 0px 9px;
+    border-radius: 18px 0px 0px 18px;
     object-fit: cover;
 }
 
 aside li {
     background-color: rgb(255, 255, 255);
     border: white solid 4px;
-    border-radius: 11px;
-    width: 345px;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    border-radius: 20px;
+    width: 335px;
+    box-shadow: rgb(199, 199, 199) 0px 0px 20px 0px;
     flex: 1;
 }
 
@@ -446,9 +448,9 @@ aside p {
 
 .ndg_name {
     width: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    box-shadow: rgb(218, 218, 218) 0px 0px 20px 0px;
     height: 193px;
 }
 
@@ -459,9 +461,9 @@ aside p {
 
 .longchamps_name {
     width: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    box-shadow: rgb(218, 218, 218) 0px 0px 20px 0px;
     height: 210px;
 }
 
@@ -472,22 +474,21 @@ aside p {
 
 .pomègues_name {
     width: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    box-shadow: rgb(218, 218, 218) 0px 0px 20px 0px;
     height: 238px;
 }
 
 .frioul {
     width: 100%;
     height: 108px;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
 }
 
 .frioul_name {
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    box-shadow: rgb(218, 218, 218) 0px 0px 20px 0px;
     height: 165px;
     width: auto;
 }
@@ -499,9 +500,9 @@ aside p {
 
 .big_pics_name {
     width: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
-    box-shadow: rgb(216, 216, 216) 0px 0px 50px 0px;
+    box-shadow: rgb(218, 218, 218) 0px 0px 20px 0px;
     height: 444px;
 }
 
@@ -518,12 +519,11 @@ aside p {
 
 #activités img {
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #activité_global {
     display: flex;
-    /* border: black solid; */
     gap: 40px;
     width: 100%;
     flex-wrap: wrap;
@@ -533,7 +533,6 @@ aside p {
     height: 100%;
     flex: 1;
     display: flex;
-    /* border: red solid; */
     min-width: 200px;
     gap: 40px;
 }
@@ -541,7 +540,6 @@ aside p {
 .colonne {
     min-width: 200px;
     width: 100%;
-    /* border: rgb(38, 0, 255) solid; */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -578,7 +576,7 @@ footer {
 #infos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1370px;
+    max-width: 1420px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 36px;
@@ -685,10 +683,6 @@ footer a:hover {
     
     /* Barre de recherche */
 
-    .case {
-        width: 230px;
-    }
-
     .filtre {
         width: 100%;
     }
@@ -709,16 +703,8 @@ footer a:hover {
         flex-direction: column;
     }
 
-    #hebergement h2 {
-        font-size: 16px;
-    }
-
-    #hebergement p {
-        font-size: 15px;
-    }
-
-    .hebergement_star {
-        font-size: 12px;
+    #hebergement ul, aside ul {
+        gap: 12px;
     }
 
     #hebergement {
@@ -726,11 +712,9 @@ footer a:hover {
         width: 100%;
         max-width: none;
         background-color: rgba(255, 255, 255, 0);
-    }
-    
-    #hebergement {
         padding: 0 0;
     }
+    
 
     aside {
         position: absolute;
@@ -741,31 +725,13 @@ footer a:hover {
         padding-bottom: 35px;
     }
 
-    aside img {
-        min-width: 126px;
-        max-width: 126px;
-        height: 133px;
-    }
-
-    aside li {
-        width: 335px;
-    }
-
     #titre_aside {
         gap: 110px;
         font-size: 18px;
     }
 
-    aside h3 {
-        font-size: 16px;
-    }
-
-    aside p {
-        font-size: 15px;
-    }
-
-    .aside_star {
-        font-size: 13px;
+    #activité_global, .bloc, .colonne {
+        gap: 23px;
     }
 
 
@@ -785,15 +751,6 @@ footer a:hover {
         width: auto;
         padding-left: 20px;
     }
-
-    .infos h2 {
-        font-size: 17px;
-    }
-
-    .infos p {
-        font-size: 15px;
-    }
-
 }
 
 
@@ -806,8 +763,7 @@ footer a:hover {
     #activités img {
         width: 100%;
         height: 8em;
-        border-radius: 17px 17px 0px 0px;
-        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
     }
 
     .big_pics_name, .pomègues_name, .frioul_name, .ndg_name, .longchamps_name {
@@ -815,7 +771,7 @@ footer a:hover {
         height: 13.8em;
         border-radius: 20px;
         text-align: left;
-        box-shadow: gray 0px 0px 18px 1px;
+        box-shadow: rgb(199, 199, 199) 0px 0px 20px 0px;
         flex: 1;
     }
 }
